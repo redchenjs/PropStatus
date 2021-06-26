@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor3D", "Monitor3D.csproj", "{DBE1A2EB-F44D-41AC-9507-BB1857E7A92E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBE1A2EB-F44D-41AC-9507-BB1857E7A92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE1A2EB-F44D-41AC-9507-BB1857E7A92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE1A2EB-F44D-41AC-9507-BB1857E7A92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE1A2EB-F44D-41AC-9507-BB1857E7A92E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60AE3A6E-0F25-41C6-B463-955DBEE637AE}
+	EndGlobalSection
+EndGlobal
