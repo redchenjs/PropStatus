@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor3D", "Monitor3D.csproj", "{DBE1A2EB-F44D-41AC-9507-BB1857E7A92E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GyroAngle", "GyroAngle.csproj", "{DBE1A2EB-F44D-41AC-9507-BB1857E7A92E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
