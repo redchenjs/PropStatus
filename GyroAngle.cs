@@ -56,9 +56,9 @@ namespace GyroAngle
             this.label_Yaw.Text   = "Yaw   : " + M_Yaw.ToString();
             this.label_Roll.Text  = "Roll  : " + M_Roll.ToString();
 
-            this.label_HX.Text = "HX    : " + M_HX.ToString();
-            this.label_HY.Text = "HY    : " + M_HY.ToString();
-            this.label_HZ.Text = "HZ    : " + M_HZ.ToString();
+            this.label_HX.Text = "HX : " + M_HX.ToString();
+            this.label_HY.Text = "HY : " + M_HY.ToString();
+            this.label_HZ.Text = "HZ : " + M_HZ.ToString();
 
             gl.Flush();
         }
@@ -69,24 +69,55 @@ namespace GyroAngle
 
             gl.PolygonMode(FaceMode.FrontAndBack, PolygonMode.Filled);
 
-            gl.Enable(OpenGL.GL_DEPTH_TEST);
-
-            float[] global_ambient = new float[] { 0.5f, 0.5f, 0.5f, 1.0f };
-            float[] light0pos = new float[] { 0.0f, 5.0f, 10.0f, 1.0f };
-            float[] light0ambient = new float[] { 0.2f, 0.2f, 0.2f, 1.0f };
-            float[] light0diffuse = new float[] { 0.3f, 0.3f, 0.3f, 1.0f };
-            float[] light0specular = new float[] { 0.8f, 0.8f, 0.8f, 1.0f };
-
-            float[] lmodel_ambient = new float[] { 0.2f, 0.2f, 0.2f, 1.0f };
-            gl.LightModel(OpenGL.GL_LIGHT_MODEL_AMBIENT, lmodel_ambient);
+            float[] global_ambient = new float[] { 0.2f, 0.2f, 0.2f, 1.0f };
 
             gl.LightModel(OpenGL.GL_LIGHT_MODEL_AMBIENT, global_ambient);
+            gl.Enable(OpenGL.GL_LIGHTING);
+
+            float[] light0pos = new float[] { 1.0f, 1.0f, 0.0f, 0.0f };
+            float[] light0ambient = new float[] { 0.0f, 0.0f, 0.0f, 1.0f };
+            float[] light0diffuse = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
+            float[] light0specular = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
+
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_POSITION, light0pos);
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_AMBIENT, light0ambient);
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_DIFFUSE, light0diffuse);
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_SPECULAR, light0specular);
-            gl.Enable(OpenGL.GL_LIGHTING);
+
             gl.Enable(OpenGL.GL_LIGHT0);
+
+            float[] light1pos = new float[] { 1.0f, 1.0f, 0.0f, 1.0f };
+            float[] light1ambient = new float[] { 0.0f, 0.0f, 0.0f, 1.0f };
+            float[] light1diffuse = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
+            float[] light1specular = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
+
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_POSITION, light1pos);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_AMBIENT, light1ambient);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_DIFFUSE, light1diffuse);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPECULAR, light1specular);
+
+            //gl.Enable(OpenGL.GL_LIGHT0);
+
+            float[] light2pos = new float[] { 1.0f, 1.0f, 0.0f, 1.0f };
+            float[] light2ambient = new float[] { 0.0f, 0.0f, 0.0f, 1.0f };
+            float[] light2diffuse = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
+            float[] light2specular = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
+
+            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_POSITION, light2pos);
+            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_AMBIENT, light2ambient);
+            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_DIFFUSE, light2diffuse);
+            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_SPECULAR, light2specular);
+
+            //gl.Enable(OpenGL.GL_LIGHT2);
+
+            gl.ColorMaterial(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_AMBIENT_AND_DIFFUSE);
+            gl.Enable(OpenGL.GL_COLOR_MATERIAL);
+
+            float[] mat_specular = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
+            float[] mat_emission = new float[] { 0.0f, 0.0f, 0.0f, 1.0f };
+
+            gl.Material(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_SPECULAR, mat_specular);
+            gl.Material(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_EMISSION, mat_emission);
 
             gl.ShadeModel(OpenGL.GL_SMOOTH);
 
