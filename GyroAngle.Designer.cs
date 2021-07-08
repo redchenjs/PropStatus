@@ -31,9 +31,9 @@ namespace GyroAngle
             this.label_Pitch = new System.Windows.Forms.Label();
             this.label_Yaw = new System.Windows.Forms.Label();
             this.label_Roll = new System.Windows.Forms.Label();
-            this.label_HZ = new System.Windows.Forms.Label();
-            this.label_HY = new System.Windows.Forms.Label();
             this.label_HX = new System.Windows.Forms.Label();
+            this.label_HY = new System.Windows.Forms.Label();
+            this.label_HZ = new System.Windows.Forms.Label();
             this.openGLControl = new SharpGL.OpenGLControl();
             ((System.ComponentModel.ISupportInitialize)(this.openGLControl)).BeginInit();
             this.SuspendLayout();
@@ -41,7 +41,7 @@ namespace GyroAngle
             // label_Pitch
             // 
             this.label_Pitch.AutoSize = true;
-            this.label_Pitch.BackColor = System.Drawing.Color.Black;
+            this.label_Pitch.BackColor = System.Drawing.Color.Transparent;
             this.label_Pitch.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Pitch.ForeColor = System.Drawing.Color.Snow;
             this.label_Pitch.Location = new System.Drawing.Point(30, 360);
@@ -53,7 +53,7 @@ namespace GyroAngle
             // label_Yaw
             // 
             this.label_Yaw.AutoSize = true;
-            this.label_Yaw.BackColor = System.Drawing.Color.Black;
+            this.label_Yaw.BackColor = System.Drawing.Color.Transparent;
             this.label_Yaw.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Yaw.ForeColor = System.Drawing.Color.Snow;
             this.label_Yaw.Location = new System.Drawing.Point(30, 384);
@@ -65,7 +65,7 @@ namespace GyroAngle
             // label_Roll
             // 
             this.label_Roll.AutoSize = true;
-            this.label_Roll.BackColor = System.Drawing.Color.Black;
+            this.label_Roll.BackColor = System.Drawing.Color.Transparent;
             this.label_Roll.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Roll.ForeColor = System.Drawing.Color.Snow;
             this.label_Roll.Location = new System.Drawing.Point(30, 408);
@@ -77,7 +77,7 @@ namespace GyroAngle
             // label_HX
             // 
             this.label_HX.AutoSize = true;
-            this.label_HX.BackColor = System.Drawing.Color.Black;
+            this.label_HX.BackColor = System.Drawing.Color.Transparent;
             this.label_HX.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_HX.ForeColor = System.Drawing.Color.Snow;
             this.label_HX.Location = new System.Drawing.Point(180, 360);
@@ -89,7 +89,7 @@ namespace GyroAngle
             // label_HY
             // 
             this.label_HY.AutoSize = true;
-            this.label_HY.BackColor = System.Drawing.Color.Black;
+            this.label_HY.BackColor = System.Drawing.Color.Transparent;
             this.label_HY.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_HY.ForeColor = System.Drawing.Color.Snow;
             this.label_HY.Location = new System.Drawing.Point(180, 384);
@@ -101,7 +101,7 @@ namespace GyroAngle
             // label_HZ
             // 
             this.label_HZ.AutoSize = true;
-            this.label_HZ.BackColor = System.Drawing.Color.Black;
+            this.label_HZ.BackColor = System.Drawing.Color.Transparent;
             this.label_HZ.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_HZ.ForeColor = System.Drawing.Color.Snow;
             this.label_HZ.Location = new System.Drawing.Point(180, 408);

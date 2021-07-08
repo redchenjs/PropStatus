@@ -36,6 +36,8 @@ namespace GyroAngle
         {
             OpenGL gl = openGLControl.OpenGL;
 
+            gl.ClearColor(0.11f, 0.11f, 0.11f, 1.0f);
+
             gl.Clear(OpenGL.GL_COLOR_BUFFER_BIT | OpenGL.GL_DEPTH_BUFFER_BIT);
             gl.LoadIdentity();
 
@@ -85,30 +87,6 @@ namespace GyroAngle
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_SPECULAR, light0specular);
 
             gl.Enable(OpenGL.GL_LIGHT0);
-
-            float[] light1pos = new float[] { 1.0f, 1.0f, 0.0f, 1.0f };
-            float[] light1ambient = new float[] { 0.0f, 0.0f, 0.0f, 1.0f };
-            float[] light1diffuse = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
-            float[] light1specular = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
-
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_POSITION, light1pos);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_AMBIENT, light1ambient);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_DIFFUSE, light1diffuse);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPECULAR, light1specular);
-
-            //gl.Enable(OpenGL.GL_LIGHT0);
-
-            float[] light2pos = new float[] { 1.0f, 1.0f, 0.0f, 1.0f };
-            float[] light2ambient = new float[] { 0.0f, 0.0f, 0.0f, 1.0f };
-            float[] light2diffuse = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
-            float[] light2specular = new float[] { 1.0f, 1.0f, 1.0f, 1.0f };
-
-            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_POSITION, light2pos);
-            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_AMBIENT, light2ambient);
-            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_DIFFUSE, light2diffuse);
-            gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_SPECULAR, light2specular);
-
-            //gl.Enable(OpenGL.GL_LIGHT2);
 
             gl.ColorMaterial(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_AMBIENT_AND_DIFFUSE);
             gl.Enable(OpenGL.GL_COLOR_MATERIAL);
